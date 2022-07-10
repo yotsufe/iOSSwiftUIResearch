@@ -52,10 +52,10 @@
 		65D522A42879C7C600B39E18 /* iOSSwiftUIResearch */ = {
 			isa = PBXGroup;
 			children = (
-				65D522A52879C7C600B39E18 /* iOSSwiftUIResearchApp.swift */,
-				65D522A72879C7C600B39E18 /* ContentView.swift */,
-				65D522A92879C7C700B39E18 /* Assets.xcassets */,
 				65D522AE2879C7C700B39E18 /* Info.plist */,
+				65D522A72879C7C600B39E18 /* ContentView.swift */,
+				65D522A52879C7C600B39E18 /* iOSSwiftUIResearchApp.swift */,
+				65D522A92879C7C700B39E18 /* Assets.xcassets */,
 				65D522AB2879C7C700B39E18 /* Preview Content */,
 			);
 			path = iOSSwiftUIResearch;
