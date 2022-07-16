@@ -6,7 +6,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: FirstAppView().navigationTitle("画面2")) {
+                NavigationLink(destination: FirstAppView().navigationTitle("First App")) {
                     Text("First App")
                 }
             }
