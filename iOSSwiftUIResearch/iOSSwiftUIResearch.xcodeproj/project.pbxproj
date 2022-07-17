@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6571A68D28847688006685E2 /* SecondAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6571A68C28847688006685E2 /* SecondAppView.swift */; };
 		657792BA287B296600B98BBB /* FirstAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657792B9287B296600B98BBB /* FirstAppView.swift */; };
 		65D522A62879C7C600B39E18 /* iOSSwiftUIResearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D522A52879C7C600B39E18 /* iOSSwiftUIResearchApp.swift */; };
 		65D522A82879C7C600B39E18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D522A72879C7C600B39E18 /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6571A68C28847688006685E2 /* SecondAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondAppView.swift; sourceTree = "<group>"; };
 		657792B9287B296600B98BBB /* FirstAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppView.swift; sourceTree = "<group>"; };
 		65D522A22879C7C600B39E18 /* iOSSwiftUIResearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSwiftUIResearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D522A52879C7C600B39E18 /* iOSSwiftUIResearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftUIResearchApp.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6571A68B28847659006685E2 /* SecondApp */ = {
+			isa = PBXGroup;
+			children = (
+				6571A68C28847688006685E2 /* SecondAppView.swift */,
+			);
+			path = SecondApp;
+			sourceTree = "<group>";
+		};
 		657792BB287B297B00B98BBB /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				657792BB287B297B00B98BBB /* FirstApp */,
+				6571A68B28847659006685E2 /* SecondApp */,
 				65D522AE2879C7C700B39E18 /* Info.plist */,
 				65D522A72879C7C600B39E18 /* ContentView.swift */,
 				65D522A52879C7C600B39E18 /* iOSSwiftUIResearchApp.swift */,
@@ -151,6 +162,7 @@
 			files = (
 				657792BA287B296600B98BBB /* FirstAppView.swift in Sources */,
 				65D522A82879C7C600B39E18 /* ContentView.swift in Sources */,
+				6571A68D28847688006685E2 /* SecondAppView.swift in Sources */,
 				65D522A62879C7C600B39E18 /* iOSSwiftUIResearchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

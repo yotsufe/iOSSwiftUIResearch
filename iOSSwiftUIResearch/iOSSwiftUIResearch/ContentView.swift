@@ -8,7 +8,13 @@ struct ContentView: View {
             VStack {
                 NavigationLink(destination: FirstAppView().navigationTitle("First App")) {
                     Text("First App")
-                }
+                }.padding()
+
+                NavigationLink(destination: SecondAppView().navigationTitle("Second App")) {
+                    Text("Second App")
+                }.padding()
+
+                Spacer()
             }
             .navigationTitle("menu")
         }
