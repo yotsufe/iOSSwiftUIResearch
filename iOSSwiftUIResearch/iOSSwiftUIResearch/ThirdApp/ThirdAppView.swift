@@ -9,6 +9,17 @@ struct ThirdAppView: View {
                 .resizable()
                 .ignoresSafeArea()
                 .aspectRatio(contentMode: .fill)
+
+            HStack {
+                Button(action: {
+                }) {
+                    Image("cymbal")
+                }
+                Button(action: {
+                }) {
+                    Image("guitar")
+                }
+            }
         }
     }
 }
