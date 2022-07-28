@@ -3,6 +3,9 @@
 import SwiftUI
 
 struct ThirdAppView: View {
+
+    let soundPlayer = SoundPlayer()
+
     var body: some View {
         ZStack {
             Image("background")
@@ -12,10 +15,12 @@ struct ThirdAppView: View {
 
             HStack {
                 Button(action: {
+                    soundPlayer.cymbalPlay()
                 }) {
                     Image("cymbal")
                 }
                 Button(action: {
+                    soundPlayer.guitarPlay()
                 }) {
                     Image("guitar")
                 }
