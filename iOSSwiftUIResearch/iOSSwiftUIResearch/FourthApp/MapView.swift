@@ -12,6 +12,17 @@ struct MapView: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: MKMapView, context: Context) {
+        let geocoder = CLGeocoder()
+        geocoder.geocodeAddressString(
+            searchKey,
+            completionHandler: { (placemarks, error) in
+                if let unwrapPlacemarks = placemarks,
+                   let firstPlacemark = unwrapPlacemarks.first,
+                   let location = firstPlacemark.location {
+                    let targetCoordinate = location.coordinate
+                }
+                
+            })
     }
 }
 
