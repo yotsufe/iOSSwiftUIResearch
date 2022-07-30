@@ -10,14 +10,14 @@ struct FirstAppView: View {
             Text(outputText)
                 .padding()
 
-            Button(action: {
+            Button {
                 isTapped = !isTapped
                 if isTapped {
                     outputText = "Taped"
                 } else {
                     outputText = "First State"
                 }
-            }) {
+            } label: {
                 Text("切り替えボタン")
                     .foregroundColor(Color.white)
                     .padding(.all)

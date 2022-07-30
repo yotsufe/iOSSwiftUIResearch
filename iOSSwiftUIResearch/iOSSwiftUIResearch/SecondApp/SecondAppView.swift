@@ -32,14 +32,14 @@ struct SecondAppView: View {
             }
 
 
-            Button(action: {
+            Button {
                 switch answerNum {
                 case 0:
                     answerNum = Int.random(in: 1...3)
                 default:
                     answerNum = 0
                 }
-            }) {
+            } label: {
                 switch answerNum {
                 case 0:
                     Text("じゃんけん")

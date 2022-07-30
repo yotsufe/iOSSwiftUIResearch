@@ -11,14 +11,14 @@ struct ThirdAppView: View {
             BackgroundView(imageName: "background")
 
             HStack {
-                Button(action: {
+                Button {
                     soundPlayer.cymbalPlay()
-                }) {
+                } label: {
                     Image("cymbal")
                 }
-                Button(action: {
+                Button {
                     soundPlayer.guitarPlay()
-                }) {
+                } label: {
                     Image("guitar")
                 }
             }
