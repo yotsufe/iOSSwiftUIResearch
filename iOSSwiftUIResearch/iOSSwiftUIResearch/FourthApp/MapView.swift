@@ -6,12 +6,15 @@ import MapKit
 struct MapView: UIViewRepresentable {
 
     let searchKey: String
+    let mapType: MKMapType
 
     func makeUIView(context: Context) -> MKMapView {
         MKMapView()
     }
 
     func updateUIView(_ uiView: MKMapView, context: Context) {
+        uiView.mapType = mapType
+
         let geocoder = CLGeocoder()
         geocoder.geocodeAddressString(
             searchKey,
@@ -36,6 +39,6 @@ struct MapView: UIViewRepresentable {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(searchKey: "東京駅")
+        MapView(searchKey: "東京駅", mapType: .standard)
     }
 }
