@@ -22,6 +22,10 @@ struct ContentView: View {
                     Text("Fourth App")
                 }.padding()
 
+                NavigationLink(destination: FifthAppView().navigationTitle("Fifth App")) {
+                    Text("Fifth App")
+                }.padding()
+
                 Spacer()
             }
             .navigationTitle("menu")
