@@ -6,28 +6,41 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: FirstAppView()) {
+                NavigationLink(destination: FirstAppView().navigationTitle("First App")
+                    .navigationBarTitleDisplayMode(.inline)
+                ) {
                     Text("First App")
                 }.padding()
 
-                NavigationLink(destination: SecondAppView()) {
+                NavigationLink(destination: SecondAppView().navigationTitle("Second App")
+                    .navigationBarTitleDisplayMode(.inline)
+                ) {
                     Text("Second App")
                 }.padding()
 
-                NavigationLink(destination: ThirdAppView()) {
+                NavigationLink(destination: ThirdAppView().navigationTitle("Third App")
+                    .navigationBarTitleDisplayMode(.inline)
+                ) {
                     Text("Third App")
                 }.padding()
 
-                NavigationLink(destination: FourthAppView()) {
+                NavigationLink(
+                    destination: FourthAppView().navigationTitle("Fourth App")
+                        .navigationBarTitleDisplayMode(.inline)
+                ) {
                     Text("Fourth App")
                 }.padding()
 
-                NavigationLink(destination: FifthAppView()) {
+                NavigationLink(destination: FifthAppView().navigationTitle("Fifth App")
+                    .navigationBarTitleDisplayMode(.inline)
+                ) {
                     Text("Fifth App")
                 }.padding()
 
                 Spacer()
             }
+            .navigationTitle("menu")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
