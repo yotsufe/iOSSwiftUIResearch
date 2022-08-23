@@ -36,6 +36,9 @@ struct FifthAppView: View {
                 }
             }
         }
+        .onAppear {
+            count = 0
+        }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink(destination: SettingView()) {
