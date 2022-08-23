@@ -12,6 +12,13 @@ struct SettingView: View {
                 .ignoresSafeArea()
 
             VStack {
+                Spacer()
+
+                Text("\(timerValue)秒")
+                    .font(.largeTitle)
+
+                Spacer()
+
                 Picker(selection: $timerValue) {
                     Text("10")
                         .tag(10)
