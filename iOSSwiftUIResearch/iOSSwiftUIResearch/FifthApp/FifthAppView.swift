@@ -25,6 +25,7 @@ struct FifthAppView: View {
                         .clipShape(Circle())
                 }
                 Button(action: {
+                    stopTimer()
                 }) {
                     Text("ストップ")
                         .font(.title)
@@ -63,6 +64,14 @@ struct FifthAppView: View {
         count += 1
         if timerValue - count <= 0 {
             timerHandler?.invalidate()
+        }
+    }
+
+    func stopTimer() {
+        if let unwrappedTimerHandler = timerHandler {
+            if unwrappedTimerHandler.isValid == true {
+                unwrappedTimerHandler.invalidate()
+            }
         }
     }
 }
