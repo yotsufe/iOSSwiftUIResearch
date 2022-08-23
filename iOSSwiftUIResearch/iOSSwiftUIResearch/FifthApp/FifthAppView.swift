@@ -4,10 +4,11 @@ import SwiftUI
 
 struct FifthAppView: View {
 
+    @AppStorage("timer_value") var timerValue = 10
     @State var timerHandler: Timer?
     @State var count = 0
-    @AppStorage("timer_value") var timerValue = 10
-    
+    @State var showAlert = false
+
     var body: some View {
         VStack(spacing: 30.0) {
             Text("残り\(timerValue - count)秒")
@@ -46,6 +47,11 @@ struct FifthAppView: View {
                 }
             }
         }
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("終了"),
+                  message: Text("タイマー終了時間です"),
+                  dismissButton: .default(Text("閉じる")))
+        }
     }
 
     func startTimer() {
@@ -67,6 +73,7 @@ struct FifthAppView: View {
         count += 1
         if timerValue - count <= 0 {
             timerHandler?.invalidate()
+            showAlert = true
         }
     }
 
