@@ -37,6 +37,12 @@ struct ContentView: View {
                     Text("Fifth App")
                 }.padding()
 
+                NavigationLink(destination: SixthAppView().navigationTitle("Sixth App")
+                    .navigationBarTitleDisplayMode(.inline)
+                ) {
+                    Text("Sixth App")
+                }.padding()
+
                 Spacer()
             }
             .navigationTitle("menu")
